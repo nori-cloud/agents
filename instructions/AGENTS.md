@@ -1,4 +1,4 @@
-# Claude Rules
+# AGENT Rules
 
 ## YOU MUST section
 
@@ -32,7 +32,11 @@
 - YOU MUST always make sure the sanity check passes (`pnpm sanity`, `pnpm build lint type-check`, or relevant script passes) after implementations
 - YOU MUST not push unless explicitly instructed, always default to let user handle git push.
 
-## Pull Request (PR)
+## Git - Source Control
+
+- Use conventional commit message - `type(optional scope): description`. e.g `feat(agents): update AGENTS.md`. 
+
+### Pull Request (PR)
 
 - Use `/make-pr` skill for creating PRs
 - Reference project template if exists, else use default structure
