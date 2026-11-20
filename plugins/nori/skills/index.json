@@ -1,0 +1,29 @@
+{
+  "skills": [
+    {
+      "name": "cli-gh",
+      "version": "0.1.0",
+      "files": ["SKILL.md", "agents/openai.yaml", "references/version.txt"]
+    },
+    {
+      "name": "find-skills",
+      "version": "0.1.0",
+      "files": ["SKILL.md"]
+    },
+    {
+      "name": "herdr",
+      "version": "0.1.0",
+      "files": ["SKILL.md"]
+    },
+    {
+      "name": "make-pr",
+      "version": "0.1.0",
+      "files": ["SKILL.md"]
+    },
+    {
+      "name": "markdown-documentation",
+      "version": "0.1.0",
+      "files": ["SKILL.md"]
+    }
+  ]
+}

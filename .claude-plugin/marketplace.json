@@ -1,0 +1,14 @@
+{
+  "name": "nori-cloud",
+  "owner": {
+    "name": "nori-cloud"
+  },
+  "plugins": [
+    {
+      "name": "nori",
+      "source": "./plugins/nori",
+      "version": "0.1.0",
+      "description": "Shared nori-cloud agent skills for Claude Code and OMP."
+    }
+  ]
+}
