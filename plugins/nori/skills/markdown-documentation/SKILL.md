@@ -9,9 +9,16 @@ Use this skill whenever you create, edit, or review a Markdown document. It prov
 
 ## What should the document do first?
 
-Start with a short answer to `What am I looking at?` Give the reader the purpose of the document and a simple map of what follows.
+Start with a short answer to `What am I looking at?`, then show the next action or minimum working example.
 
 For task-focused or reference documents, prefer questions as headings. Answer each question immediately, then add examples or details.
+
+## How do I keep documentation lean?
+
+- Keep READMEs human-first: purpose, minimum complete setup, and links to details. Put repository-maintenance context in `AGENTS.md`; keep shared user instructions separate.
+- Give each fact one authoritative home. Link instead of repeating explanations across prose, examples, or tables.
+- Include only context needed to act, verify, or avoid material risk. Remove stale history, obvious explanations, speculative options, and repeated warnings.
+- Preserve prerequisites, required configuration, constraints, and known limitations. Concise must not mean incomplete; treat layouts as starting points and omit sections that do not help the reader.
 
 ## What metadata should the document include?
 

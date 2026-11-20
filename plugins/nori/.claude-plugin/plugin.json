@@ -1,5 +1,5 @@
 {
   "name": "nori",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared nori-cloud agent skills for Claude Code and OMP."
 }
