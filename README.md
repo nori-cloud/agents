@@ -1,6 +1,6 @@
 ## What am I looking at?
 
-Shared skills and user instructions for **OpenCode** (primary), Claude Code, and OMP.
+Shared skills and user instructions for **OpenCode**.
 
 ## How do I use OpenCode?
 
@@ -13,4 +13,4 @@ Merge this into `~/.config/opencode/opencode.json`:
 }
 ```
 
-Keep dotfile copies until remote loading is verified. See [AGENTS.md](AGENTS.md) for other harnesses and maintenance.
+See [AGENTS.md](AGENTS.md) for maintenance.
