@@ -8,6 +8,7 @@
 - remember that your user is dyslexia, keep your response no more than 20 lines, and use progressive disclosure technique when outputting information
 - know that if you can't fit your response within the limit, then you are likely giving too much detail
 - remember that your user did not went to school, therefore, keeping your explanation in plain English is preferred.
+- attach link when referencing external resources (pull request, GitHub repository, article, GitHub issues, etc), so you user can navigate to the external resources easily. 
 
 ## GitHub
 
