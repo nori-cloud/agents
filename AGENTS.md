@@ -6,12 +6,12 @@ Repository guidance for `nori-cloud/agents`. Human setup is in [README.md](READM
 
 | Path | Purpose |
 | --- | --- |
-| `plugins/nori/skills/<name>/` | Skill instructions and supporting files. |
+| `skills/<name>/` | Skill instructions and supporting files. |
 | `.claude-plugin/marketplace.json` | Claude Code/OMP catalog. |
-| `plugins/nori/.claude-plugin/plugin.json` | Native plugin metadata and version. |
-| `plugins/nori/skills/index.json` | OpenCode skill versions and downloadable files. |
+| `.claude-plugin/plugin.json` | Native plugin metadata and version. |
+| `skills/index.json` | OpenCode skill versions and downloadable files. |
 
-Keep one skill tree and two hand-maintained catalogs; no generator or custom installer. Catalog URLs point to the directory containing `index.json`; files resolve as `<base-url>/<name>/<file>`.
+The repository root is the `nori` plugin: keep one skill tree and two hand-maintained catalogs; no generator or custom installer. Catalog URLs point to the directory containing `index.json`; files resolve as `<base-url>/<name>/<file>`.
 
 ## How do other harnesses install skills?
 
@@ -22,7 +22,7 @@ omp plugin marketplace add nori-cloud/agents
 omp plugin install nori@nori-cloud
 ```
 
-For local testing, replace the marketplace source with the checkout's absolute path. OpenCode can use the absolute `plugins/nori/skills` path instead of the README's remote skill URL.
+For local testing, replace the marketplace source with the checkout's absolute path. OpenCode can use the absolute `skills` path instead of the README's remote skill URL.
 
 Claude Code namespaces commands, such as `/nori:make-pr`; OpenCode uses `@make-pr`, and OMP keeps `make-pr`. OpenCode combines configured remote instructions with local `AGENTS.md` files, so avoid duplicate guidance.
 
@@ -46,7 +46,7 @@ Claude Code local edits need a new session or `/reload-plugins`; published insta
 There is no repository build or test runner.
 
 - Validate JSON manifests, matching native versions, and complete catalog file lists.
-- For native packaging changes: `claude plugin validate .` and `claude plugin validate ./plugins/nori`.
+- For native packaging changes: `claude plugin validate .` and `claude plugin validate .claude-plugin/marketplace.json`.
 - For OpenCode setup: inspect `opencode debug config` and `opencode api skill.list` after initialization. Remote skills must resolve inside the download cache; check supporting files against published content.
 - Keep dotfile copies and links until verification and a separate cleanup request. Their presence can hide failed remote loading.
 

@@ -9,7 +9,7 @@ Merge this into `~/.config/opencode/opencode.json`:
 ```json
 {
   "instructions": ["https://raw.githubusercontent.com/nori-cloud/agents/main/instructions/AGENTS.md"],
-  "skills": ["https://raw.githubusercontent.com/nori-cloud/agents/main/plugins/nori/skills/"]
+  "skills": ["https://raw.githubusercontent.com/nori-cloud/agents/main/skills/"]
 }
 ```
 
